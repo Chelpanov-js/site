@@ -1,0 +1,68 @@
+.add-post {
+  margin-bottom: 3rem;
+  box-shadow: 0 15px 25px
+  rgba($black, .45);
+  background-color: $secondary;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+}
+
+.add-post__form {
+  display: flex;
+  align-items: center;
+}
+
+.add-post__textarea {
+  display: block;
+  flex-grow: 1;
+  overflow: hidden;
+  height: 26px;
+  border: none;
+  background: transparent;
+  resize: none;
+
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: $white;
+
+  &::placeholder {
+    color: #D2D2D2;
+  }
+}
+
+
+.add-post__form-actions {
+  width: 120px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-post__file,
+.add-post__send {
+   display: block;
+   width: 4.4rem;
+   height: 4.4rem;
+   border-radius: 50%;
+   cursor: pointer;
+   border: none;
+   transition: background-color .2s linear;
+}
+
+
+.add-post__file {
+  background-color: #EBEBEB;
+
+  input {
+      display: none;
+  }
+
+  &:hover {
+    background-color:darken(#EBEBEB, 5%);
+  }
+}
+
+.add-post__send {
+  background-color: blue;
+
+}
